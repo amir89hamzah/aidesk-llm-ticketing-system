@@ -1,0 +1,7 @@
+{
+  "to": "engineer@example.com",
+  "subject": "AIDesk OTP Verification",
+  "text": "Your AIDesk OTP is 123456. It will expire in 5 minutes.",
+  "otp_scope": "create",
+  "expires_in_minutes": 5
+}

@@ -1,0 +1,71 @@
+label,type,model,category
+Start,Start,,Agent Flows
+LLM_0,LLM,gpt-4o,Agent Flows
+JSON_intent,Tool,,Agent Flows
+Router_1,Condition,,Agent Flows
+LLM_1,LLM,gpt-4o-mini,Agent Flows
+Sticky Note,StickyNote,,Agent Flows
+LLM_3,LLM,gpt-4o-mini,Agent Flows
+LLM_4_SearchResponder,LLM,gpt-4o,Agent Flows
+LLM_5,LLM,gpt-4o,Agent Flows
+LLM_Checker2,LLM,gpt-4o-mini,Agent Flows
+Router,Condition,,Agent Flows
+Sticky Note (1),StickyNote,,Agent Flows
+JS_GenerateOTP,CustomFunction,,Agent Flows
+JSON_otp_code,Tool,,Agent Flows
+AskOTP,DirectReply,,Agent Flows
+AskMoreInfo,DirectReply,,Agent Flows
+JS_OTP_Verify,CustomFunction,,Agent Flows
+OTP_Result,Condition,,Agent Flows
+Reply_OTP_Verify,DirectReply,,Agent Flows
+JSON_otp_attempts,Tool,,Agent Flows
+JSON_otp_status_message,Tool,,Agent Flows
+JSON_otp_last_entered,Tool,,Agent Flows
+JSON_otp_verified,Tool,,Agent Flows
+JSON_otp_status,Tool,,Agent Flows
+JSON_otp_code,Tool,,Agent Flows
+JSON_otp_expires_at,Tool,,Agent Flows
+OTP_intent,Condition,,Agent Flows
+Error_Intent,DirectReply,,Agent Flows
+JS_OTP_Scope,CustomFunction,,Agent Flows
+JS_interpret1,CustomFunction,,Agent Flows
+Router_HTTP1,Condition,,Agent Flows
+Create_Success,DirectReply,,Agent Flows
+JSON_action_ok,Tool,,Agent Flows
+JSON_op_type,Tool,,Agent Flows
+JSON_case_id,Tool,,Agent Flows
+JSON_message_user,Tool,,Agent Flows
+JS_Cleanup1,CustomFunction,,Agent Flows
+Error_Intent2,DirectReply,,Agent Flows
+JS_AllInOne_Draft3,CustomFunction,,Agent Flows
+LLM_Checker3,LLM,gpt-4o-mini,Agent Flows
+OTP_Router_3,Condition,,Agent Flows
+JS_OTP_Scope_3,CustomFunction,,Agent Flows
+Reply_Verify_3,DirectReply,,Agent Flows
+JSON_otp_code (1),Tool,,Agent Flows
+JSON_otp_expires_at (7),Tool,,Agent Flows
+AskOTP_3,DirectReply,,Agent Flows
+JS_GenerateOTP_3,CustomFunction,,Agent Flows
+HTTP_Modify_Update,HTTP,,Agent Flows
+commit_success,Tool,,Agent Flows
+commit_message,Tool,,Agent Flows
+commit_case_id,Tool,,Agent Flows
+commit_error_code,Tool,,Agent Flows
+Router_HTTP2,Condition,,Agent Flows
+Error_Intent3,DirectReply,,Agent Flows
+JS_Cleanup2,CustomFunction,,Agent Flows
+Modify_Success,DirectReply,,Agent Flows
+HTTP_Search,HTTP,,Agent Flows
+HTTP_CreateTicket,HTTP,,Agent Flows
+sanitize_http_create,CustomFunction,,Agent Flows
+sanitize_http_modify,CustomFunction,,Agent Flows
+Create_SendOTP,HTTP,,Agent Flows
+Create_Success,HTTP,,Agent Flows
+Modify_Success,HTTP,,Agent Flows
+Modify_SendOTP,HTTP,,Agent Flows
+sanitize_create_sendOTP,CustomFunction,,Agent Flows
+JS_JSONSafeForHttp,CustomFunction,,Agent Flows
+Sticky Note,StickyNote,,Agent Flows
+JS_AllInOne_CreateDraft,CustomFunction,,Agent Flows
+JS_NormalizeValidateDates_Create,CustomFunction,,Agent Flows
+JS_NVDates_Modify,CustomFunction,,Agent Flows

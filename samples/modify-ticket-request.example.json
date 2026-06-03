@@ -1,0 +1,12 @@
+{
+  "action": "modify_ticket",
+  "case_id": "CASE-20260110-001",
+  "engineer_email": "engineer@example.com",
+  "changes": [
+    {
+      "field": "action_description",
+      "op": "append",
+      "value": "Checked power supply and restarted HMI."
+    }
+  ]
+}

@@ -131,13 +131,13 @@ See [`docs/architecture.md`](docs/architecture.md) for a more detailed breakdown
 
 ## Flowise canvas overview
 
-The Flowise canvas contains the routing, create, search, modify, and OTP branches. The screenshot and redacted exported flow are prepared in the local repo package; upload them manually if needed because connector upload supports text files more reliably than binary assets.
+![Flowise canvas overview](assets/screenshots/flowise-canvas-overview.png)
 
-Reference files:
+The full exported Flowise JSON is included in redacted form:
 
-- `flowise/exported-flow-redacted.json`
-- `flowise/node-labels.csv`
-- `docs/flowise-node-map.md`
+- [`flowise/exported-flow-redacted.json`](flowise/exported-flow-redacted.json)
+- [`flowise/node-labels.csv`](flowise/node-labels.csv)
+- [`docs/flowise-node-map.md`](docs/flowise-node-map.md)
 
 ---
 
@@ -145,6 +145,7 @@ Reference files:
 
 ```text
 aidesk-llm-ticketing-system/
+│
 ├── README.md
 ├── docs/
 │   ├── architecture.md
@@ -155,6 +156,7 @@ aidesk-llm-ticketing-system/
 │   ├── security-notes.md
 │   ├── lessons-learned.md
 │   └── roadmap.md
+│
 ├── samples/
 │   ├── ticket-payload.example.json
 │   ├── create-ticket-request.example.json
@@ -162,10 +164,16 @@ aidesk-llm-ticketing-system/
 │   ├── otp-payload.example.json
 │   ├── bot-log.example.json
 │   └── email-template.example.md
+│
 ├── flowise/
+│   ├── exported-flow-redacted.json
 │   └── node-labels.csv
+│
 ├── assets/
-│   └── architecture.mmd
+│   ├── architecture.mmd
+│   └── screenshots/
+│       └── flowise-canvas-overview.png
+│
 ├── .env.example
 ├── docker-compose.example.yml
 ├── SECURITY.md

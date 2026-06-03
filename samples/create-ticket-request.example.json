@@ -1,0 +1,11 @@
+{
+  "action": "create_ticket",
+  "engineer_email": "engineer@example.com",
+  "site": "Kerteh",
+  "system": "RGTSU",
+  "pic": "Customer PIC",
+  "problem_title": "HMI freeze after login",
+  "action_description": "Screen freezes after login. Need to check HMI runtime and PLC communication.",
+  "start_date": "2026-01-10",
+  "end_date": "OPEN"
+}

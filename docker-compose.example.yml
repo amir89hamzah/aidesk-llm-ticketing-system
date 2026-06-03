@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  flowise:
+    image: flowiseai/flowise:latest
+    container_name: aidesk-flowise
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - FLOWISE_USERNAME=${FLOWISE_USERNAME}
+      - FLOWISE_PASSWORD=${FLOWISE_PASSWORD}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    volumes:
+      - flowise-data:/root/.flowise
+    env_file:
+      - .env
+
+  smtp-relay:
+    image: your-smtp-relay-image:latest
+    container_name: aidesk-smtp-relay
+    restart: unless-stopped
+    environment:
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_PORT=${SMTP_PORT}
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+      - SMTP_FROM=${SMTP_FROM}
+    env_file:
+      - .env
+
+volumes:
+  flowise-data:

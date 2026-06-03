@@ -1,0 +1,30 @@
+flowchart LR
+    U[User / Engineer] --> FE[AIDesk Chat UI<br/>www.aidesk.rest]
+    FE --> F[Flowise Agent Flow]
+
+    F --> R[LLM Router<br/>OpenAI GPT-4o]
+    R --> G[General Help]
+    R --> C[Create Ticket]
+    R --> M[Modify / Update Ticket]
+    R --> S[Search Ticket]
+    R --> O[OTP Verification]
+
+    C --> CE[Create Extractor<br/>GPT-4o mini]
+    CE --> CV[Create Validator]
+    CV --> OTP[Generate OTP<br/>5 min expiry]
+    OTP --> SMTP[SMTP Relay]
+    SMTP --> E[Engineer Email]
+
+    O --> OV[Verify OTP<br/>attempt limit + expiry]
+    OV -->|Create scope| GC[Google Apps Script<br/>Create Ticket]
+    OV -->|Modify scope| GM[Google Apps Script<br/>Modify Ticket]
+
+    S --> GS[Google Apps Script<br/>Search Current Tickets]
+    GS --> SR[Search Responder<br/>GPT-4o]
+
+    GC --> SHEET[(Google Sheets<br/>Ticket Store)]
+    GM --> SHEET
+    GS --> SHEET
+
+    F --> NGINX[Nginx Reverse Proxy + HTTPS]
+    F --> DOCKER[Docker / VPS Deployment]
